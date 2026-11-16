@@ -298,7 +298,7 @@ var BigPicture = (function () {
 		iframeSiteVid = document[createEl]('IFRAME');
 		iframeSiteVid.setAttribute('allowfullscreen', true);
 		iframeSiteVid.allow = 'autoplay; fullscreen';
-		iframeSiteVid.referrerpolicy = 'strict-origin-when-cross-origin';
+		iframeSiteVid.referrerPolicy = 'strict-origin-when-cross-origin';
 		iframeSiteVid.onload = function () { return iframeContainer[removeEl](loadingIcon); };
 		changeCSS(
 			iframeSiteVid,

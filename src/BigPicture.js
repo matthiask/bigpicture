@@ -292,7 +292,7 @@ function initialize(options) {
 	iframeSiteVid = document[createEl]('IFRAME')
 	iframeSiteVid.setAttribute('allowfullscreen', true)
 	iframeSiteVid.allow = 'autoplay; fullscreen'
-	iframeSiteVid.referrerpolicy = 'strict-origin-when-cross-origin'
+	iframeSiteVid.referrerPolicy = 'strict-origin-when-cross-origin'
 	iframeSiteVid.onload = () => iframeContainer[removeEl](loadingIcon)
 	changeCSS(
 		iframeSiteVid,
